@@ -1,7 +1,7 @@
 <template>
   <div style="display: flex;">
-    <span v-for="(item, index) of item" :key="index" style="padding: 10px;">
-      {{ item }}
+    <span v-for="(value, index) of item" :key="index" style="padding: 10px;">
+      {{ value }}
     </span>
   </div>
   <img alt="Vue logo" src="./assets/top.png">
