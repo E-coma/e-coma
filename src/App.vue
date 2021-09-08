@@ -1,14 +1,17 @@
 <template>
   <div style="display: flex;">
-    <span class="link">
+    <span class="link hover-aoi">
       e-coma
     </span>
-    <span class="link">
+    <a class="link hover-aoi" href="https://www.google.com/">
       ECOMA.PORT
-    </span>
+    </a>
+    <a class="link hover-aoi" href="https://salon.io/e-coma">
+      port
+    </a>
   </div>
   <img alt="Vue logo" src="./assets/top.png">
-  <HelloWorld msg="E.COMA"/>
+  <HelloWorld msg="E.COMA" style="text-align: center;"/>
 </template>
 
 <script>
@@ -29,7 +32,7 @@ export default {
 
 <style>
 #app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif;
+ /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -37,6 +40,13 @@ export default {
   margin-top: 60px; */
 }
 .link {
+  text-align: center;
   padding: 10px;
+  color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hover-aoi:hover {
+    color: rgb(118, 122, 165);
 }
 </style>
