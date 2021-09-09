@@ -1,17 +1,25 @@
 <template>
-  <div style="display: flex;">
-    <span class="link hover-aoi">
+  <div>
+  <div class="imgAndHeader">
+    <div>
+    <a class="link hover-aoi">
       e-coma
-    </span>
+    </a>
+    </div>
+    <div>
     <a class="link hover-aoi" href="https://www.google.com/">
       ECOMA.PORT
     </a>
+    </div>
+    <div>
     <a class="link hover-aoi" href="https://salon.io/e-coma">
       port
     </a>
+    </div>
   </div>
   <img alt="Vue logo" src="./assets/top.png">
   <HelloWorld msg="E.COMA" style="text-align: center;"/>
+  </div>
 </template>
 
 <script>
@@ -39,12 +47,19 @@ export default {
   color: #2c3e50;
   margin-top: 60px; */
 }
+.imgAndHeader {
+  display: block;
+  width: 300px;
+  height: 200px;
+  background-image: url("./assets/top.png");
+  background-size: cover;
+}
 .link {
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding: 5px;
   color: #666;
-    text-decoration: none;
-    cursor: pointer;
+      text-decoration: none;
+  cursor: pointer;
 }
 .hover-aoi:hover {
     color: rgb(118, 122, 165);
