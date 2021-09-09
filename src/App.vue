@@ -1,26 +1,30 @@
 <template>
-  <div style="display: flex;">
-    <span class="link hover-aoi">
+  <div class="ue">
+  <h1> E-COMA </h1>
+  </div>
+<div class="dekai">
+<div class="aida">
+  <span class="link hover-aoi">
       e-coma
     </span>
+</div>
+<div class="aida">
     <a class="link hover-aoi" href="https://www.google.com/">
-      ECOMA.PORT
+      profile
     </a>
+</div>
+<div class="aida">
     <a class="link hover-aoi" href="https://salon.io/e-coma">
-      port
+      photo
     </a>
-  </div>
-  <img alt="Vue logo" src="./assets/top.png">
-  <HelloWorld msg="E.COMA" style="text-align: center;"/>
+</div>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   components: {
-    HelloWorld
   },
   data: function () {
     return {
@@ -40,13 +44,32 @@ export default {
   margin-top: 60px; */
 }
 .link {
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  color: #666;
+  color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
+    font-size: 16px;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 50%;
 }
 .hover-aoi:hover {
     color: rgb(118, 122, 165);
+}
+.dekai {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(assets/happa.png);
+  background-size: cover;
+  display: block;
+}
+.aida{
+  height: 5px;
+  margin-bottom: 25px;
+}
+.ue{
+  text-align: center;
 }
 </style>
