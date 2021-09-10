@@ -1,9 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import Simple from './Simple.vue'
+import Home from './mitame/Home.vue'
+import Profile from './mitame/Profile.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
-  { path: '/a', component: Simple }
+  { path: '/', component: Home },
+  { path: '/profile', component: Profile }
 ]
 const router = createRouter({
   history: createWebHistory(),

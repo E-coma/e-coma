@@ -1,12 +1,12 @@
 <template>
     <div style="text-align:center;">
-      I'm simple :)
+      I'm profile :)
     </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'Profile',
   components: {
   },
   data: function () {
@@ -15,3 +15,6 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+</style>
