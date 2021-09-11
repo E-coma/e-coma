@@ -9,12 +9,12 @@
     </span>
 </div>
 <div class="aida">
-    <a class="link hover-aoi" href="https://www.google.com/">
+    <a class="link hover-aoi" @click="togallery">
       gallery
     </a>
 </div>
 <div class="aida">
-    <a class="link hover-aoi" href="https://salon.io/e-coma">
+    <a class="link hover-aoi" @click="tocontact">
       contact
     </a>
 </div>
@@ -34,6 +34,12 @@ export default {
   methods: {
     toprofile: function () {
       this.$router.push({ path: '/profile' })
+    },
+    togallery: function () {
+      this.$router.push({ path: '/gallery' })
+    },
+    tocontact: function () {
+      this.$router.push({ path: '/contact' })
     }
   }
 }
