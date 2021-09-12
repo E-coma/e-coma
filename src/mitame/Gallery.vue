@@ -1,11 +1,11 @@
 <template>
     <div style="text-align:center;">
-    <div class="header">
-    <div class="title">
-    <span class="bosuti">E-COMA.</span>
-    <span class="sabti">gallery</span>
-    </div>
-    </div>
+      <div class="header">
+        <div class="title">
+          <span class="bosuti">E-COMA.</span>
+          <span class="sabti">gallery</span>
+        </div>
+      </div>
     </div>
 </template>
 
