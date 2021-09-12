@@ -1,6 +1,11 @@
 <template>
     <div style="text-align:center;">
-      I'm gallery :)
+    <div class="header">
+    <div class="title">
+    <span class="bosuti">E-COMA.</span>
+    <span class="sabti">gallery</span>
+    </div>
+    </div>
     </div>
 </template>
 
@@ -13,5 +18,16 @@ export default {
 }
 </script>
 <style scoped>
+.title {
+ text-align: left;
+}
+.header {
 
+}
+.bosuti {
+  font-size: 30px;
+}
+.sabti {
+  font-size: 20px;
+}
 </style>
