@@ -1,13 +1,15 @@
 <template>
     <div style="text-align:center;">
-      I'm profile :)
+      <Header1 subTitle="profile"/>
     </div>
 </template>
 
 <script>
+import Header1 from '../components/Header1.vue'
 export default {
   name: 'Profile',
   components: {
+    Header1
   },
   data: function () {
     return {

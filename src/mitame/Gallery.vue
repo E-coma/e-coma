@@ -1,33 +1,18 @@
 <template>
     <div style="text-align:center;">
-      <div class="header">
-        <div class="title">
-          <span class="bosuti">E-COMA.</span>
-          <span class="sabti">gallery</span>
-        </div>
-      </div>
+      <Header1 subTitle="gallery"/>
     </div>
 </template>
 
 <script>
+import Header1 from '../components/Header1.vue'
 export default {
   name: 'Gallery',
   components: {
+    Header1
   },
   data: () => ({})
 }
 </script>
 <style scoped>
-.title {
- text-align: left;
-}
-.header {
-
-}
-.bosuti {
-  font-size: 30px;
-}
-.sabti {
-  font-size: 20px;
-}
 </style>
