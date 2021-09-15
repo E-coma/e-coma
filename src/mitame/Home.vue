@@ -1,24 +1,24 @@
 <template>
   <div class="ue font1">
-  <p class="titlehaba"> E-COMA </p>
+    <p class="titlehaba"> E-COMA </p>
   </div>
-<div class="dekai">
-<div class="aida e-comaaida">
-  <span class="link hover-aoi" @click="toprofile">
-      profile
-    </span>
-</div>
-<div class="aida">
-    <a class="link hover-aoi" @click="togallery">
-      gallery
-    </a>
-</div>
-<div class="aida">
-    <a class="link hover-aoi" @click="tocontact">
-      contact
-    </a>
-</div>
-</div>
+  <div class="dekai">
+    <div class="aida e-comaaida">
+      <span class="link hover-aoi" @click="toprofile">
+          profile
+        </span>
+    </div>
+    <div class="aida">
+        <a class="link hover-aoi" @click="togallery">
+          gallery
+        </a>
+    </div>
+    <div class="aida">
+        <a class="link hover-aoi" @click="tocontact">
+          contact
+        </a>
+    </div>
+  </div>
 </template>
 
 <script>

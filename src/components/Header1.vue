@@ -1,7 +1,7 @@
 <template>
  <div class="header">
   <div class="title">
-    <span class="bosuti">E-COMA.</span>
+    <span class="bosuti">{{ bosuti2 }}</span>
     <span class="subti">{{ subTitle }}</span>
   </div>
 </div>
@@ -12,6 +12,19 @@ export default {
   name: 'Header1',
   props: {
     subTitle: String
+  },
+  data: function () {
+    return {
+      bosuti: 'E-COMA'
+    }
+  },
+  computed: {
+    bosuti2: function () {
+      const mozi1 = 'E-COMA'
+      const mozi2 = '.'
+      const mozi3 = mozi1 + mozi2
+      return mozi3
+    }
   }
 }
 </script>
