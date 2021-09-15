@@ -22,7 +22,8 @@ export default {
     bosuti2: function () {
       const mozi1 = 'E-COMA'
       const mozi2 = '.'
-      const mozi3 = mozi1 + mozi2
+      let mozi3 = mozi1
+      mozi3 = mozi1 + mozi2
       return mozi3
     }
   }
