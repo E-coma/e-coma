@@ -2,7 +2,9 @@
  <div class="header">
   <div class="title">
     <span class="bosuti">{{ bosuti2 }}</span>
-    <span class="subti">{{ subTitle }}</span>
+    <span v-if="subTitle == 'profile'" class="subti">{{ subTitle }}
+    <span>uiiiiiiiii</span>
+    </span>
   </div>
 </div>
 </template>
