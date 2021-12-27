@@ -1,16 +1,26 @@
 <template>
+<header>
   <div class="ue font1">
     <p class="titlehaba"> E-COMA </p>
   </div>
-  <div class="dekai">
-    <div class="aida e-comaaida">
-      <span class="link hover-aoi" @click="toprofile">
-          profile
-        </span>
+  <div class="subtitle">
+    <p>EMIRI HIIZUMI</p>
+    <p>PORTFOLIO.SITE</p>
+  </div>
+  <div class="nav">
+    <div class="aida">
+      <a class="link hover-aoi" @click="toprofile">
+          about me
+        </a>
     </div>
     <div class="aida">
+        <a class="link hover-aoi" @click="towebdesign">
+          webdesign
+        </a>
+    </div>
+        <div class="aida">
         <a class="link hover-aoi" @click="togallery">
-          gallery
+          photos
         </a>
     </div>
     <div class="aida">
@@ -19,6 +29,12 @@
         </a>
     </div>
   </div>
+  </header>
+  <article>
+    <div class="top-img">
+    <img src="../assets/aoi.png" width="990" alt="">
+    </div>
+  </article>
 </template>
 
 <script>
@@ -35,6 +51,9 @@ export default {
     toprofile: function () {
       this.$router.push({ path: '/profile' })
     },
+    towebdesign: function () {
+      this.$router.push({ path: '/webdesign' })
+    },
     togallery: function () {
       this.$router.push({ path: '/gallery' })
     },
@@ -46,29 +65,31 @@ export default {
 </script>
 
 <style scoped>
+.subtitle {
+  line-height: 0px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 57px;
+  text-align: center;
+  font-size: 22px;
+}
 .link {
   text-align: left;
-  padding-left: 15px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 10px 80px;
+  color: #707070;
     text-decoration: none;
     cursor: pointer;
-    font-size: 19px;
+    font-size: 22px;
     width: 10px;
     height: 10px;
-    margin-bottom: 50%;
-    font-family: system-ui;
 }
 .hover-aoi:hover {
     color: rgb(118, 122, 165);
 }
-.dekai {
-  width: 800px;
-  height: 500px;
-  margin: 0 auto;
-  background-image: url(../assets/aoi.png);
-  background-size: cover;
-  display: block;
+.nav {
+  display: flex;
+  justify-content: center;
 }
 .aida{
   height: 5px;
@@ -76,18 +97,20 @@ export default {
 }
 .ue{
   text-align: center;
-  color: rgba(107, 106, 107, 0.733);
 
 }
 .font1{
-  font-family: system-ui;
   font-size: 50px;
 }
 .titlehaba{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 35px;
+  margin-bottom: -10px;
 }
-.e-comaaida{
-padding-top: 20px;
+
+.top-img {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
 }
+
 </style>
