@@ -1,26 +1,31 @@
 <template>
-<div>
-<router-view></router-view>
-</div>
+<Header1></Header1>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 <script>
+import Header1 from './components/Header1'
 export default {
   name: 'App',
   components: {
+    Header1
   },
   data: function () {
     return {
       item: ['a', 'b', 'c']
     }
+  },
+  methods: {
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Microsoft Yi Baiti', arial, sans-serif;
+  font-family: "Microsoft Yi Baiti", arial, sans-serif;
   color: #707070;
- /* font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
