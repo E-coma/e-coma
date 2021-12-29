@@ -11,16 +11,16 @@
     </div>
     <div class="nav">
       <div class="aida">
-        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/profile'}" @click="toprofile"> about me </a>
+        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/profile','nowpage': $route.path === '/profile'}" @click="toprofile"> about me </a>
       </div>
       <div class="aida">
-        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/webdesign'}" @click="towebdesign"> webdesign </a>
+        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/webdesign','nowpage': $route.path === '/webdesign'}" @click="towebdesign"> webdesign </a>
       </div>
       <div class="aida">
-        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/photos'}" @click="tophotos"> photos </a>
+        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/photos','nowpage': $route.path === '/photos'}" @click="tophotos"> photos </a>
       </div>
       <div class="aida">
-        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/contact'}" @click="tocontact"> contact </a>
+        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/contact','nowpage': $route.path === '/contact'}" @click="tocontact"> contact </a>
       </div>
     </div>
   </header>
@@ -107,14 +107,17 @@ export default {
 }
 .hover-aoi:hover {
   color: #000;
-  transition: color 0.5s ease 0s;
+  transition: color 0.7s ease 0s;
 }
 .nav {
   display: flex;
   justify-content: center;
 }
+.nowpage {
+  cursor: text;
+}
 .dont-select {
-  opacity: 0.3;
+  color: rgb(182, 182, 182);
 }
 .aida {
   height: 5px;

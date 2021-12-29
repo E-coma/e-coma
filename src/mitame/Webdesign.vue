@@ -1,6 +1,6 @@
 <template>
   <article>
-    <section>
+    <section class="watabiwa">
       <img src="../assets/Photos/Sonota/watabiwa-img.jpg" width="990" alt="" />
       <h1>ワタシノビワコ フォトコンテスト</h1>
       <pre>
@@ -12,7 +12,7 @@
       </pre>
       <button v-on:click="towatabiwa">git hub</button>
     </section>
-    <section>
+    <section class="ecoma">
       <img src="../assets/Photos/Sonota/e-coma-img.jpg" width="990" alt="" />
       <h1>E-COMA PORTFOLIO.SITE</h1>
       <pre>
@@ -50,7 +50,8 @@ article {
 section {
   width: 100%;
   max-width: 990px;
-  margin: 0 auto;
+  margin: 57px auto 112px auto;
+
 }
 pre {
   font-family: "游ゴシック";
