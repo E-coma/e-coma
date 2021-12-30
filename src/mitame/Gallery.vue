@@ -1,30 +1,13 @@
 <template>
 <article>
+<div class="header">
+</div>
+<div v-bind:class="{'no-select': !select,'zoom': select,}">
+<img src="../assets/Photos/Sonota/close-icon.png" alt="" v-bind:class="{'noimgicon': !select,'imgicon': select}" @click="imgiconclick">
+
+</div>
 <div class="all">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img1.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img2.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img3.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img4.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img5.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img7.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img9.png" alt="">
-  <img class="img-tall" src="../assets/Photos/Gallery/ga-img8.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img10.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img11.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img12.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img13.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img14.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img15.png" alt="">
-  <img class="img-tall" src="../assets/Photos/Gallery/ga-img6.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img16.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img17.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img18.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img19.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img20.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img21.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img22.png" alt="">
-  <img class="img-tall" src="../assets/Photos/Gallery/ga-img23.png" alt="">
-  <img class="img-all" src="../assets/Photos/Gallery/ga-img24.png" alt="">
+<img class="img-all" v-bind:class="{'imgopa': !select}" v-for="(link, index) of imgs" :src="link" :key="index" @click="imgclick">
 </div>
 </article>
 </template>
@@ -34,7 +17,25 @@ export default {
   name: 'Profile',
   components: {},
   data: function () {
-    return {}
+    return {
+      select: false
+    }
+  },
+  methods: {
+    imgclick: function () {
+      this.select = true
+    },
+    imgiconclick: function () {
+      this.select = false
+    }
+  },
+  computed: {
+    imgs () {
+      const files = require.context('../assets/Photos/Gallery/', true, /\.png$/)
+      return files.keys().map(x => x ? x.slice(2, x.length) : '').map(x => {
+        return require('../assets/Photos/Gallery/' + x)
+      })
+    }
   }
 }
 </script>
@@ -43,6 +44,39 @@ article {
   width: auto;
   max-width: 1600px;
   margin: 0 auto;
+}
+.zoom {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+.imgicon {
+  position: fixed;
+  z-index: 999999;
+  width: 17.17px;
+  height: 17.17px;
+  top: 60px;
+  right: 170px;
+  cursor: pointer;
+  border: 1px solid #c0c0c0;
+  padding: 10.5px;
+  border-radius: 50%;
+}
+.imgicon:hover {
+  opacity: 0.7;
+}
+.noimgicon {
+  position: fixed;
+  width: 17.17px;
+  height: 17.17px;
+  top: 60px;
+  right: 170px;
+  display: none;
+}
+.noselect {
+display: none;
 }
 .all {
   margin-top: 29.5px;
@@ -54,10 +88,13 @@ article {
   width: 217.5px;
   height: 254px;
   padding: 27.5px 72.5px 50px 72.5px;
+}
+.imgopa {
   opacity: 0.7;
 }
 .img-all:hover {
   opacity: 1;
+  cursor: pointer;
 }
 .img-tall {
   width: 337.5;
@@ -67,6 +104,7 @@ article {
 }
 .img-tall:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 </style>
