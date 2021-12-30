@@ -6,16 +6,16 @@
   <img class="img-all" src="../assets/Photos/Gallery/ga-img3.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img4.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img5.png" alt="">
-  <img class="img-tall" src="../assets/Photos/Gallery/ga-img6.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img7.png" alt="">
-  <img class="img-tall" src="../assets/Photos/Gallery/ga-img8.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img9.png" alt="">
+  <img class="img-tall" src="../assets/Photos/Gallery/ga-img8.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img10.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img11.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img12.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img13.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img14.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img15.png" alt="">
+  <img class="img-tall" src="../assets/Photos/Gallery/ga-img6.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img16.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img17.png" alt="">
   <img class="img-all" src="../assets/Photos/Gallery/ga-img18.png" alt="">
@@ -46,6 +46,8 @@ article {
 }
 .all {
   margin-top: 29.5px;
+  max-width: 1087.5px;
+  margin: 40px auto 0 auto;
 }
 
 .img-all {
