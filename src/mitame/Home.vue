@@ -2,7 +2,7 @@
 
   <article>
     <div class="top-img">
-    <img src="../assets/aoi.png" width="990" alt="">
+    <img src="../assets/Topphotos/aoi.png" width="990" alt="">
     </div>
   </article>
 </template>

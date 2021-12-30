@@ -117,7 +117,7 @@ export default {
   cursor: text;
 }
 .dont-select {
-  color: rgb(182, 182, 182);
+  color: rgb(202, 202, 202);
 }
 .aida {
   height: 5px;

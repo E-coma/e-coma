@@ -1,7 +1,7 @@
 <template>
 <article>
   <div class="img">
-    <img src="../assets/Photos/Sonota/4.png" height="371" alt="" />
+    <img src="../assets/Photos/4.png" height="371" alt="" />
   </div>
   <div class="comment">
     <p class="name">EMIRI HIIZUMI</p>

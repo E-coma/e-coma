@@ -1,19 +1,20 @@
 <template>
   <article>
     <section class="watabiwa">
-      <img src="../assets/Photos/Sonota/watabiwa-img.jpg" width="990" alt="" />
+      <img src="../assets/Photos/watabiwa-img.jpg" width="990" alt="" />
       <h1>ワタシノビワコ フォトコンテスト</h1>
       <pre>
 自主制作として、滋賀県の琵琶湖をメインとしたフォトコンテストの特設サイトを作成しました。
 初めてのwebサイト構築であり、レスポンシブ対応にとても苦戦しました。
-私の地元である滋賀県の琵琶湖と、趣味である写真撮影を組み合わせたテーマにしました。
+サイト全体のカラーは琵琶湖をイメージして青ベースにしています。また波をイメージしたトップ画像と、
+フッター部分の背景にこだわりました。
 写真が好きなあらゆる年代の方に向けてシンプルでわかりやすいデザインを心掛け、また手軽に参加していただけるように
 スマホ・一眼レフ・フィルムカメラのどんなカメラでも参加できるコンテストにしました。
       </pre>
       <button v-on:click="towatabiwa">git hub</button>
     </section>
     <section class="ecoma">
-      <img src="../assets/Photos/Sonota/e-coma-img.jpg" width="990" alt="" />
+      <img src="../assets/Photos/e-coma-img.jpg" width="990" alt="" />
       <h1>E-COMA PORTFOLIO.SITE</h1>
       <pre>
 私自身のポートフォリオサイトを作成しました。
