@@ -1,16 +1,29 @@
 <template>
-<article>
-<div class="header">
-</div>
-<div class="zoomall" v-bind:class="{'no-select': !select,'zoom': select,}">
-<img src="../assets/Photos/Sonota/close-icon.png" alt="" v-bind:class="{'noimgicon': !select,'imgicon': select}" @click="imgiconclick">
-<img :src="selectdata" alt="" class="zoomimg">
-</div>
-<div class="all">
-<img class="img-all" v-bind:class="{'imgopa': !select}" v-for="(link, index) of imgs" :src="link.a" :key="index" @click="() => imgclick(link.b)">
-</div>
-</article>
-
+  <article>
+    <div class="header"></div>
+    <div class="zoomall" v-bind:class="{ 'no-select': !select, zoom: select }">
+      <img
+        src="../assets/Photos/Sonota/close-icon.png"
+        alt=""
+        v-bind:class="{ noimgicon: !select, imgicon: select }"
+        @click="imgiconclick"
+      />
+      <img :src="selectdata" alt="" class="zoomimg" />
+    </div>
+    <div class="all">
+      <img
+        v-for="(link, index) of imgs"
+        v-bind:class="{
+          imgopa: !select,
+          'img-tall': link.tall,
+          'img-all': !link.tall,
+        }"
+        :src="link.a"
+        :key="index"
+        @click="() => imgclick(link.b)"
+      />
+    </div>
+  </article>
 </template>
 
 <script>
@@ -47,10 +60,37 @@ export default {
   },
   computed: {
     imgs () {
-      const files = require.context('../assets/Photos/Gallery/', true, /\.png$/)
-      return files.keys().map(x => x ? x.slice(2, x.length) : '').map(x => {
-        return { a: require('../assets/Photos/Gallery/' + x), b: require('../assets/Photos/Gallery-zoom/' + x) }
-      })
+      const files = require.context(
+        '../assets/Photos/Gallery/',
+        true,
+        /\.png$/
+      )
+      return files
+        .keys()
+        .sort(
+          (a, b) =>
+            Number(a.split('-')[1].slice(3)) - Number(b.split('-')[1].slice(3))
+        )
+        .map((x) => (x ? x.slice(2, x.length - 4) : ''))
+        .map((x) => {
+          if (x.indexOf('tall') > 0) {
+            return {
+              a: require('../assets/Photos/Gallery/' + x + '.png'),
+              b: require('../assets/Photos/Gallery-zoom/' +
+                x.slice(0, x.length - 5) +
+                '.png'),
+              tall: true
+            }
+          } else {
+            return {
+              a: require('../assets/Photos/Gallery/' + x + '.png'),
+              b: require('../assets/Photos/Gallery-zoom/' +
+                x.slice(0, x.length - 4) +
+                '.png'),
+              tall: false
+            }
+          }
+        })
     }
   }
 }
@@ -71,7 +111,7 @@ article {
 }
 .zoomimg {
   display: block;
-  width: 700px;
+  height: 60%;
   max-width: 1600px;
   top: 274px;
   margin: 0 auto;
@@ -102,7 +142,7 @@ article {
   display: none;
 }
 .noselect {
-display: none;
+  display: none;
 }
 .all {
   margin-top: 29.5px;
@@ -126,11 +166,9 @@ display: none;
   width: 337.5;
   height: 254px;
   padding: 27.5px 12.5px 50px 12.5px;
-  opacity: 0.7;
 }
 .img-tall:hover {
   opacity: 1;
   cursor: pointer;
 }
-
 </style>
