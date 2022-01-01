@@ -35,4 +35,15 @@ export default {
 html {
 overflow-y: scroll;
 }
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #707070;
+  padding: 2px 37px;
+  letter-spacing: 1.5px;
+}
+
+button:hover {
+  background-color: #dddddd;
+}
 </style>

@@ -3,15 +3,20 @@
     <div class="comment">
       <p class="title">CONTACT</p>
       <div class="text">
-        <form action="">
-          <p>NAME<br>
-          <input type="text" name="name" id="">
+        <form>
+          <p>
+            <label for="name">NAME<br /></label>
+            <input type="text" name="user-name" id="name" />
           </p>
-          <p>E-MAIL<br>
-          <input type="email"></p>
-          <p>MESSAGE<br>
-          <textarea name="" id=""></textarea></p>
-          <button>SEND</button>
+          <p>
+            <label for="email">E-MAIL<br /></label>
+            <input type="text" id="email" name="user-email" />
+          </p>
+          <p>
+            <label for="comment">MESSAGE<br /></label>
+            <textarea name="user-comment" id="comment"></textarea>
+          </p>
+          <p class="button"><button type="submit">SEND</button></p>
         </form>
       </div>
     </div>
@@ -33,7 +38,7 @@ export default {
 <style scoped>
 article {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 990px;
   margin: 0 auto;
@@ -44,7 +49,7 @@ article {
   text-align: center;
 }
 .comment {
-  margin: 0 auto;
+  width: 100%;
 }
 
 .title {
@@ -61,5 +66,32 @@ article {
 }
 .text p {
   margin: 0;
+}
+
+form input,
+form textarea {
+  border: none;
+  border-bottom: 1px solid #707070;
+  padding: 4px;
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+textarea {
+  height: 68px;
+}
+.button {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #707070;
+  padding: 2px 37px;
+  letter-spacing: 1.5px;
+}
+
+button:hover {
+  background-color: #dddddd;
 }
 </style>
