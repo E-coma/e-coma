@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'Profile',
+  name: 'Contact',
   components: {},
   data: function () {
     return {}

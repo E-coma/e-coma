@@ -1,6 +1,7 @@
 <template>
   <article>
     <div class="header"></div>
+    <span>{{ scrollY }}</span>
     <div class="zoomall" v-bind:class="{ 'no-select': !select, zoom: select }">
       <img
         src="../assets/Photos/Sonota/close-icon.png"
@@ -28,17 +29,19 @@
 
 <script>
 export default {
-  name: 'Profile',
+  name: 'Gallery',
   components: {},
   data: function () {
     return {
       select: false,
-      selectdata: undefined
+      selectdata: undefined,
+      scrollY: 0
     }
   },
   methods: {
     imgclick: function (b) {
       this.select = true
+      this.scrollY = window.scrollY
       document.body.style.position = 'fixed'
       document.body.style.margin = '0 auto'
       document.body.style.maxWidth = '1087.5px'
@@ -56,6 +59,7 @@ export default {
       document.body.style.left = ''
       document.body.style.top = ''
       this.selectdata = undefined
+      window.scrollTo(0, this.scrollY)
     }
   },
   computed: {

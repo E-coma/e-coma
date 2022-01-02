@@ -25,6 +25,7 @@ export default {
 #app {
   font-family: "Microsoft Yi Baiti", arial, sans-serif;
   color: #707070;
+  transition: all 0.5s 0s ease;
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

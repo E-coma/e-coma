@@ -7,7 +7,7 @@
     <p class="name">EMIRI HIIZUMI</p>
     <div class="text">
       <p>滋賀県出身。</p>
-      <p>Webデザイナーを目指して勉強中です。</p>
+      <p>Webデザイナーを目指して勉強中しています。</p>
       <p>フィルムカメラでの写真撮影も行っています。</p>
     </div>
   </div>
