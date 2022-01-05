@@ -1,7 +1,6 @@
 <template>
   <article>
     <div class="header"></div>
-    <span>{{ scrollY }}</span>
     <div class="zoomall" v-bind:class="{ 'no-select': !select, zoom: select }">
       <img
         src="../assets/Photos/Sonota/close-icon.png"
