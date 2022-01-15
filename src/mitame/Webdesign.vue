@@ -1,9 +1,9 @@
 <template>
   <article>
     <section class="watabiwa">
-      <img src="../assets/Photos/watabiwa-img.jpg" width="990" alt="" />
+      <a href="https://photocon.vercel.app/"><img src="../assets/Photos/watabiwa-img.jpg" width="990" alt="" /></a>
       <div class="titlegroup">
-      <h1>ワタシノビワコ フォトコンテスト</h1>
+      <a href="https://photocon.vercel.app/"><h1>ワタシノビワコ フォトコンテスト</h1></a>
       <button v-on:click="towatabiwa">GIT HUB</button>
       </div>
       <pre>
@@ -17,13 +17,25 @@
 
     </section>
     <section class="ecoma">
-      <img src="../assets/Photos/e-coma-img.jpg" width="990" alt="" />
+      <a href="https://e-coma.vercel.app/"><img src="../assets/Photos/e-coma-img.jpg" width="990" alt="" /></a>
       <div class="titlegroup">
-      <h1>E-COMA PORTFOLIO.SITE</h1>
+      <a href="https://e-coma.vercel.app/"><h1>E-COMA PORTFOLIO.SITE</h1></a>
       <button v-on:click="toecoma">GIT HUB</button>
       </div>
       <pre>
 私自身のポートフォリオサイトを作成しました。
+      </pre>
+    </section>
+        <section class="ecoma">
+      <a href="https://coffeeshop-hp.vercel.app/"><img src="../assets/Photos/coffeeandsandwich-img.jpg" width="990" alt="" /></a>
+      <div class="titlegroup">
+      <a href="https://coffeeshop-hp.vercel.app/"><h1>COFFEE AND SANDWICH</h1></a>
+      <button v-on:click="toecoma">GIT HUB</button>
+      </div>
+      <pre>
+自主制作として、コーヒースタンドのHPを作成しました。
+コンセプトとしましては、落ち着いた雰囲気で、男女問わず来店してもらいやすいような
+デザインを心掛けました。
       </pre>
     </section>
   </article>
@@ -65,6 +77,14 @@ h1 {
 }
 .titlegroup {
   display: flex;
+}
+.titlegroup a {
+  text-decoration: none;
+  color: #707070;
+}
+
+.titlegroup a:hover {
+  opacity: 0.8;
 }
 pre {
   font-family: "游ゴシック";
