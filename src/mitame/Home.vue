@@ -19,6 +19,7 @@ export default {
   margin: 0 auto;
   margin-top: 5px;
   width: 90%;
+  text-align: center;
 }
 .top-img img {
 width: 80%;

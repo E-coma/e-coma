@@ -150,7 +150,7 @@ width: 100%;
 .link {
   margin: 0 auto;
   padding: 10px 10px;
-  font-size: 18px;
+  font-size: 4.5vw;
 }
 }
 </style>

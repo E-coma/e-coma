@@ -54,7 +54,7 @@ body {
   margin: 0 auto;
 }
 header{
-  width: 90%;
+  width: fit-content;
   margin: 0 auto;
 }
 }
