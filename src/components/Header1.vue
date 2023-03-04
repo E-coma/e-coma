@@ -19,6 +19,9 @@
       <div class="aida">
         <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/photos','nowpage': $route.path === '/photos'}" @click="tophotos"> photos </a>
       </div>
+            <div class="aida">
+        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/banners','nowpage': $route.path === '/banners'}" @click="tobanners"> banners </a>
+      </div>
       <div class="aida">
         <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/contact','nowpage': $route.path === '/contact'}" @click="tocontact"> contact </a>
       </div>
@@ -45,6 +48,9 @@ export default {
     },
     tophotos: function () {
       this.$router.push({ path: '/photos' })
+    },
+    tobanners: function () {
+      this.$router.push({ path: '/banners' })
     },
     tocontact: function () {
       this.$router.push({ path: '/contact' })
