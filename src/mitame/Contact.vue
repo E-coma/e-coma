@@ -101,8 +101,9 @@ button:hover {
 }
 @media screen and (max-width:700px) {
 article {
-  flex-flow: column;
-  padding: 10px;
+flex-flow: column;
+    padding: 10px;
+    width: fit-content;
 }
 .comment{
   margin-bottom: 20px;

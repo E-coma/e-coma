@@ -145,12 +145,12 @@ export default {
 .nav {
 max-width: fit-content;
 margin: 0 auto;
-width: 90%;
+width: 100%;
 }
 .link {
   margin: 0 auto;
   padding: 10px 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 }
 </style>
