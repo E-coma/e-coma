@@ -53,6 +53,10 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+header{
+  width: 90%;
+  margin: 0 auto;
+}
 }
 
 </style>

@@ -145,6 +145,7 @@ export default {
 .nav {
 max-width: fit-content;
 margin: 0 auto;
+width: 90%;
 }
 .link {
   margin: 0 auto;

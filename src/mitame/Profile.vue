@@ -1,7 +1,7 @@
 <template>
 <article>
   <div class="img">
-    <img src="../assets/Photos/4.png" height="371" alt="" />
+    <img src="../assets/Photos/4.png" alt="" />
   </div>
   <div class="comment">
     <p class="name">EMIRI HIIZUMI</p>
@@ -36,6 +36,10 @@ article {
   width: 50%;
   text-align: center;
 }
+.img img {
+  width: 100%;
+  text-align: center;
+}
 .comment {
   margin: 0 auto;
 }
@@ -52,5 +56,21 @@ article {
 }
 .text p {
   margin: 0;
+}
+@media screen and (max-width:700px) {
+article {
+  flex-flow: column;
+  margin-top: 50px;
+}
+.img {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+.img img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
 }
 </style>

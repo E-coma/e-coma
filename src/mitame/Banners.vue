@@ -8,7 +8,7 @@
         v-bind:class="{ noimgicon: !select, imgicon: select }"
         @click="imgiconclick"
       />
-      <img :src="selectdata" alt="" class="zoomimg" />
+      <img v-if="selectdata" :src="selectdata" alt="" class="zoomimg" />
     </div>
     <div class="all">
       <img
@@ -151,6 +151,7 @@ article {
   margin-top: 29.5px;
   max-width: 1087.5px;
   margin: 40px auto 0 auto;
+  text-align: center;
 }
 
 .img-all {
@@ -174,5 +175,14 @@ object-fit: contain;
 .img-tall:hover {
   opacity: 1;
   cursor: pointer;
+}
+@media screen and (max-width:700px) {
+  .zoomimg {
+object-fit: contain;
+width: 100%;
+}
+.imgopa {
+  opacity: unset;
+}
 }
 </style>

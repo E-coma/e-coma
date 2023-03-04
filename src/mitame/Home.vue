@@ -16,8 +16,9 @@ export default {
 <style scoped>
 .top-img {
   display: block;
-  text-align: center;
+  margin: 0 auto;
   margin-top: 5px;
+  width: 90%;
 }
 .top-img img {
 width: 80%;

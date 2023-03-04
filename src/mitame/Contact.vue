@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="img">
-      <img src="../assets/Photos/Sonota/contact-img.png" height="371" alt="" />
+      <img src="../assets/Photos/Sonota/contact-img.png" alt="" />
     </div>
   </article>
 </template>
@@ -43,9 +43,14 @@ article {
   max-width: 990px;
   margin: 0 auto;
   margin-top: 110px;
+  align-items: center;
 }
 .img {
-  width: 50%;
+  width: 80%;
+  text-align: center;
+}
+.img img {
+  width: 100%;
   text-align: center;
 }
 .comment {
@@ -93,5 +98,22 @@ button {
 
 button:hover {
   background-color: #dddddd;
+}
+@media screen and (max-width:700px) {
+article {
+  flex-flow: column;
+  padding: 10px;
+}
+.comment{
+  margin-bottom: 20px;
+}
+.img {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.img img {
+  width: 100%;
+}
 }
 </style>
