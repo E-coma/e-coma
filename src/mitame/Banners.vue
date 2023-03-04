@@ -43,7 +43,7 @@ export default {
       this.scrollY = window.scrollY
       document.body.style.position = 'fixed'
       document.body.style.margin = '0 auto'
-      document.body.style.maxWidth = '1087.5px'
+      document.body.style.maxWidth = 'auto'
       document.body.style.right = '1px'
       document.body.style.left = '0px'
       document.body.style.top = '1px'
@@ -100,7 +100,7 @@ export default {
 </script>
 <style scoped>
 article {
-  width: auto;
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -114,7 +114,7 @@ article {
 }
 .zoomimg {
   display: block;
-  height: 60%;
+  /* height: 60%; */
   max-width: 1600px;
   top: 274px;
   margin: 0 auto;
@@ -123,7 +123,7 @@ article {
 .imgicon {
   position: fixed;
   z-index: 999999;
-  width: 17.17px;
+  width: auto;
   height: 17.17px;
   top: 60px;
   right: 170px;
@@ -156,6 +156,7 @@ article {
 .img-all {
   width: 217.5px;
   height: 254px;
+object-fit: contain;
   padding: 27.5px 72.5px 50px 72.5px;
 }
 .imgopa {

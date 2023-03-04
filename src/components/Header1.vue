@@ -11,7 +11,7 @@
     </div>
     <div class="nav">
       <div class="aida">
-        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/profile','nowpage': $route.path === '/profile'}" @click="toprofile"> about me </a>
+        <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/profile','nowpage': $route.path === '/profile'}" @click="toprofile"> about</a>
       </div>
       <div class="aida">
         <a class="link hover-aoi" v-bind:class="{'dont-select': $route.path !== '/' && $route.path !== '/webdesign','nowpage': $route.path === '/webdesign'}" @click="towebdesign"> webdesign </a>
@@ -139,5 +139,17 @@ export default {
   margin-top: 35px;
   margin-bottom: -10px;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width:700px) {
+.nav {
+max-width: fit-content;
+margin: 0 auto;
+}
+.link {
+  margin: 0 auto;
+  padding: 10px 10px;
+  font-size: 20px;
+}
 }
 </style>

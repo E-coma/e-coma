@@ -47,4 +47,12 @@ button {
 button:hover {
   background-color: #dddddd;
 }
+@media screen and (max-width:600px) {
+body {
+  min-width: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+}
+
 </style>
