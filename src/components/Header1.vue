@@ -146,6 +146,7 @@ export default {
 max-width: fit-content;
 margin: 0 auto;
 width: 100%;
+flex-wrap: wrap;
 }
 .link {
   margin: 0 auto;
