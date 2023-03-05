@@ -179,6 +179,7 @@ article {
   .zoomimg {
 object-fit: contain;
 width: 100%;
+top: 20px;
 }
 .imgopa {
   opacity: unset;

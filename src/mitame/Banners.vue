@@ -114,11 +114,12 @@ article {
 }
 .zoomimg {
   display: block;
-  /* height: 60%; */
-  max-width: 1600px;
+  height: 35%;
+  max-width: 1200px;
   top: 274px;
   margin: 0 auto;
   position: relative;
+  object-fit: contain;
 }
 .imgicon {
   position: fixed;
@@ -180,6 +181,7 @@ object-fit: contain;
   .zoomimg {
 object-fit: contain;
 width: 100%;
+top: 120px;
 }
 .imgopa {
   opacity: unset;
