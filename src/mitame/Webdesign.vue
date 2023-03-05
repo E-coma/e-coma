@@ -7,7 +7,7 @@
       <button v-on:click="towatabiwa">GIT HUB</button>
       </div>
       <p>
-自主制作として、滋賀県の琵琶湖をメインとしたフォトコンテストの特設サイトを作成しました。<br>
+滋賀県の琵琶湖をメインとしたフォトコンテストの特設サイトを作成しました。<br>
 初めてのwebサイト構築であり、レスポンシブ対応にとても苦戦しました。<br>
 サイト全体のカラーは琵琶湖をイメージして青ベースにしています。また波をイメージしたトップ画像と、
 フッター部分の背景にこだわりました。<br>
@@ -33,9 +33,19 @@
       <button v-on:click="toecoma">GIT HUB</button>
       </div>
       <p>
-自主制作として、コーヒースタンドのHPを作成しました。<br>
+コーヒースタンドのHPを作成しました。<br>
 コンセプトは、落ち着いた雰囲気で、男女問わず来店してもらいやすいような
 デザインを心掛けました。
+      </p>
+    </section>
+        <section class="ecoma">
+      <a href="https://poko-faceoillp.vercel.app/"><img src="../assets/Photos/poko-img.jpg" alt="" /></a>
+      <div class="titlegroup">
+      <a href="https://poko-faceoillp.vercel.app/"><h1>poko FACIAL OIL</h1></a>
+      <button v-on:click="toecoma">GIT HUB</button>
+      </div>
+      <p>スキンケア商品のLPを作成いたしました。<br>
+
       </p>
     </section>
   </article>
