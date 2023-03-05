@@ -6,11 +6,11 @@
   <div class="comment">
     <p class="name">EMIRI HIIZUMI</p>
     <div class="text">
-      <p>滋賀県出身。</p>
-      <p>フィルムカメラでの写真撮影も行っています。</p>
-      <p>「webdesign」- ウェブサイト制作物を掲載しています。</p>
-      <p>「photos」- 撮影した写真を掲載しています。</p>
-      <p>「banners」- バナー制作物を掲載しています。</p>
+      <p></p>
+      <p></p>
+      <p>「webdesign」- ウェブサイト制作物</p>
+      <p>「photos」- 撮影写真</p>
+      <p>「banners」- バナー制作物</p>
     </div>
   </div>
 </article>
